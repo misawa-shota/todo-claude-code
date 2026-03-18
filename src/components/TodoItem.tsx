@@ -42,6 +42,7 @@ export function TodoItem({ todo, onToggle, onDelete }: Props) {
     >
       <button
         onClick={() => onToggle(todo.id)}
+        aria-label={todo.completed ? 'Mark as incomplete' : 'Mark as complete'}
         className={`mt-0.5 w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
           todo.completed
             ? 'bg-purple-500 border-purple-500'
