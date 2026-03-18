@@ -30,6 +30,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE: /todo-claude-code/
 
       - uses: actions/upload-pages-artifact@v3
         with:
